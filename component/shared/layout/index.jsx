@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
+import {Row,Col} from "antd"
 import {
     InboxOutlined,
     MobileOutlined
@@ -40,6 +41,27 @@ const Layout = ()=>{
                 <p>9971746885</p>    
             </div>
            </nav>
+           <section className="p-60">
+
+           </section>
+           <footer className="bg-blue-600 text-white p-10">
+           <Row>
+            <Col span={6} className="p-2 px-3"><div class="border-b-2 pb-4 font-semibold">KNOW US</div>
+                <p>About us</p>
+                <p>Contact us</p>
+                <p>Blog</p>
+            </Col>
+            <Col span={12} className="p-2 px-3" ><div class="border-b-2 pb-4 font-semibold">OTHER LINKS</div></Col>
+            <Col span={6} className="p-2 px-3"><div class="border-b-2 pb-4 font-semibold">HELP US SPREAD THE WORD</div></Col>
+            </Row>
+            <Row>
+                <Col span={24} className="p-2 px-3">
+                <div class="border-t-2 py-3">
+                    Disclaimer - - You are kindly advised to check the genuineness of all companies listed above on your own behalf prior to signing a contract with them. We are in no way responsible for any loss. Read Complete Disclaimer
+                </div>
+                </Col>
+            </Row>
+           </footer>
         </>
     )
 }
